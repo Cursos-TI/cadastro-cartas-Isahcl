@@ -5,13 +5,12 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
    
     char estado1 = 'B';
     char codigo1[4] = "B01";
     char nomedacidade1[30] = "Salvador";
     int populacao1 = 2897545;
-    float area1 = 693.8;
+    float area1 = 693;
     float pib1 = 125000000;
     int pontosturisticos1 = 15;
 
@@ -27,23 +26,28 @@ int main() {
 
 
 
+    printf("Digite a letra do estado: \n");
+    scanf(" %c", &estado1);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", codigo1); // Sem o '&' para texto/vetor
+  
+    printf("Digite o nome da cidade: \n");
+    scanf(" %s", &nomedacidade1); // Lê o nome mesmo com espaços (ex: São Paulo)
+
+    printf("Digite a população: \n");
+    scanf("%d", &populacao1);
+
+    printf("Digite a área: \n");
+    scanf("%f", &area1);
+
+    printf("Digite o PIB: \n");
+    scanf("%f", &pib1);
+
+    printf("Digite o número de pontos turísticos: \n");
+    scanf("%d", &pontosturisticos1);
 
 
+    return 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-  // Área para entrada de dados
-
-  // Área para exibição dos dados da cidade
-
-return 0;
-} 
