@@ -30,10 +30,10 @@ int main() {
     scanf(" %c", &estado1);
 
     printf("Digite o código da carta: \n");
-    scanf("%s", codigo1); // Sem o '&' para texto/vetor
+    scanf("%s", codigo1);
   
     printf("Digite o nome da cidade: \n");
-    scanf(" %s", &nomedacidade1); // Lê o nome mesmo com espaços (ex: São Paulo)
+    scanf(" %s", &nomedacidade1); 
 
     printf("Digite a população: \n");
     scanf("%d", &populacao1);
