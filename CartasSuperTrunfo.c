@@ -7,24 +7,27 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
    
-    char estado1;
-    char codigo1[4];
-    char nomedacidade1[30];
-    int populacao1;
-    float area1;
-    float pib1;
-    int pontosturisticos1;
+    char estado1 = 'B';
+    char codigo1[4] = "B01";
+    char nomedacidade1[30] = "Salvador";
+    int populacao1 = 2897545;
+    float area1 = 693.8;
+    float pib1 = 125000000;
+    int pontosturisticos1 = 15;
 
 
-    char estado2;
-    char codigo2[4];
-    char nomedacidade2[30];
-    int populacao2;
-    float area2;
-    float pib2;
-    int pontosturisticos2;
+    char estado2 = 'S';
+    char codigo2[4] = "S01";
+    char nomedacidade2[30] = "São Paulo";
+    int populacao2 = 11866933;
+    float area2 = 1521;
+    float pib2 = 450000000;
+    int pontosturisticos2 = 20;
+  
 
-    
+
+
+
 
 
 
