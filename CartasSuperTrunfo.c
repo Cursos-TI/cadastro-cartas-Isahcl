@@ -72,6 +72,23 @@ int main() {
     scanf("%d", &pontosturisticos2);
 
 
+
+    printf("estado1: %c\n", estado1);
+    printf("codigo1: %s\n", codigo1);
+    printf("nomedacidade1: %s\n", nomedacidade1);
+    printf("populacao1: %d\n", populacao1);
+    printf("area1: %.2f\n", area1);
+    printf("pib1: %.2f\n", pib1);
+    printf("pontosturisticos1: %d\n", pontosturisticos1);
+
+    printf("estado2: %c\n", estado2);
+    printf("codigo2: %s\n", codigo2);
+    printf("nomedacidade2: %s\n", nomedacidade2);
+    printf("populacao2: %d\n", populacao2);
+    printf("area2: %.2f\n", area2);
+    printf("pib2: %.2f\n", pib2);
+    printf("pontosturisticos2: %d\n", pontosturisticos2);
+
     return 0;
 }
 
