@@ -13,6 +13,8 @@ int main() {
     float area1 = 693;
     float pib1 = 125000000;
     int pontosturisticos1 = 15;
+    float densidadepopulacional1 = populacao1 / area1;
+    float pibpercapita1 = pib1 / populacao1;
 
 
     char estado2 = 'S';
@@ -22,8 +24,8 @@ int main() {
     float area2 = 1521;
     float pib2 = 450000000;
     int pontosturisticos2 = 20;
-  
-
+    float densidadepopulacional2 = populacao2 / area2;
+    float pibpercapita2 = pib2 / populacao2;
 
 
     printf("Digite a letra do estado: \n");
@@ -46,8 +48,6 @@ int main() {
 
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &pontosturisticos1);
-
-
 
 
     printf("Digite a letra do estado: \n");
@@ -80,6 +80,8 @@ int main() {
     printf("area1: %.2f\n", area1);
     printf("pib1: %.2f\n", pib1);
     printf("pontosturisticos1: %d\n", pontosturisticos1);
+    printf("densidadepopulacional1: %.2f\n", densidadepopulacional1);
+    printf("pibpercapita1: %.2f\n", pibpercapita1);
 
     printf("estado2: %c\n", estado2);
     printf("codigo2: %s\n", codigo2);
@@ -88,6 +90,8 @@ int main() {
     printf("area2: %.2f\n", area2);
     printf("pib2: %.2f\n", pib2);
     printf("pontosturisticos2: %d\n", pontosturisticos2);
+    printf("densidadepopulacional2: %.2f\n", densidadepopulacional2);
+    printf("pibpercapita2: %.2f\n", pibpercapita2);
 
     return 0;
 }
