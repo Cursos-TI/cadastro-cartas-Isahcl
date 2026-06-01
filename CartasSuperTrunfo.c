@@ -15,7 +15,7 @@ int main() {
     int pontosturisticos1 = 15;
     float densidadepopulacional1 = populacao1 / area1;
     float pibpercapita1 = pib1 / populacao1;
-
+    float superpoder = populacao1 + area1 + pib1 + pontosturisticos1 + densidadepopulacional1 + pibpercapita1;
 
     char estado2 = 'S';
     char codigo2[4] = "S01";
@@ -26,7 +26,7 @@ int main() {
     int pontosturisticos2 = 20;
     float densidadepopulacional2 = populacao2 / area2;
     float pibpercapita2 = pib2 / populacao2;
-
+    float superpoder2 = populacao2 + area2 + pib2 + pontosturisticos2 + densidadepopulacional2 + pibpercapita2;
 
     printf("Digite a letra do estado: \n");
     scanf(" %c", &estado1);
