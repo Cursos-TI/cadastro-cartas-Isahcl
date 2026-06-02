@@ -104,6 +104,19 @@ int main() {
 
     printf("A carta vencedora é: %s\n", (superpodercarta1 > superpodercarta2) ? nomedacidade1 : nomedacidade2);
 
+    if(populacao1 > populacao2) {
+        printf("A carta vencedora é: %s\n", nomedacidade1);
+    } else if(populacao2 > populacao1) {
+        printf("A carta vencedora é: %s\n", nomedacidade2);
+    } 
+    if(area1 > area2) {
+        printf("A carta vencedora é: %s\n", nomedacidade1);
+    } else if(area2 > area1) {
+        printf("A carta vencedora é: %s\n", nomedacidade2);
+        
+
+    }
+
 
 
     return 0;
