@@ -15,7 +15,7 @@ int main() {
     int pontosturisticos1 = 15;
     float densidadepopulacional1 = populacao1 / area1;
     float pibpercapita1 = pib1 / populacao1;
-    float superpoder = populacao1 + area1 + pib1 + pontosturisticos1 + densidadepopulacional1 + pibpercapita1;
+    float superpodercarta1 = populacao1 + area1 + pib1 + pontosturisticos1 + pibpercapita1 + (1.0 / densidadepopulacional1);
 
     char estado2 = 'S';
     char codigo2[4] = "S01";
@@ -26,7 +26,7 @@ int main() {
     int pontosturisticos2 = 20;
     float densidadepopulacional2 = populacao2 / area2;
     float pibpercapita2 = pib2 / populacao2;
-    float superpoder2 = populacao2 + area2 + pib2 + pontosturisticos2 + densidadepopulacional2 + pibpercapita2;
+    float superpodercarta2 = populacao2 + area2 + pib2 + pontosturisticos2 + pibpercapita2 + (1.0 / densidadepopulacional2);
 
     printf("Digite a letra do estado: \n");
     scanf(" %c", &estado1);
@@ -35,7 +35,7 @@ int main() {
     scanf("%s", codigo1);
   
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nomedacidade1); 
+    scanf("%s", nomedacidade1); 
 
     printf("Digite a população: \n");
     scanf("%d", &populacao1);
@@ -57,7 +57,7 @@ int main() {
     scanf("%s", codigo2);
   
     printf("Digite o nome da cidade: \n");
-    scanf("%s", &nomedacidade2); 
+    scanf("%s", nomedacidade2); 
 
     printf("Digite a população: \n");
     scanf("%d", &populacao2);
@@ -92,6 +92,19 @@ int main() {
     printf("pontosturisticos2: %d\n", pontosturisticos2);
     printf("densidadepopulacional2: %.2f\n", densidadepopulacional2);
     printf("pibpercapita2: %.2f\n", pibpercapita2);
+
+    // Comparando atributos para determinar o vencedor
+    printf("A populacao1(%d) é maior que a populacao2(%d)? %d\n", populacao1, populacao2, (populacao1 > populacao2));
+    printf("A area1(%.2f) é maior que a area2(%.2f)? %d\n", area1, area2, (area1 > area2));
+    printf("O pib1(%.2f) é maior que o pib2(%.2f)? %d\n", pib1, pib2, (pib1 > pib2));
+    printf("O número de pontos turísticos1(%d) é maior que o número de pontos turísticos2(%d)? %d\n", pontosturisticos1, pontosturisticos2, (pontosturisticos1 > pontosturisticos2));
+    printf("A densidade populacional1(%.2f) é maior que a densidade populacional2(%.2f)? %d\n", densidadepopulacional1, densidadepopulacional2, (densidadepopulacional1 > densidadepopulacional2));
+    printf("O PIB per capita1(%.2f) é maior que o PIB per capita2(%.2f)? %d\n", pibpercapita1, pibpercapita2, (pibpercapita1 > pibpercapita2));
+    printf("O super poder da carta1(%.2f) é maior que o super poder da carta2(%.2f)? %d\n", superpodercarta1, superpodercarta2, (superpodercarta1 > superpodercarta2));
+
+    printf("A carta vencedora é: %s\n", (superpodercarta1 > superpodercarta2) ? nomedacidade1 : nomedacidade2);
+
+
 
     return 0;
 }
