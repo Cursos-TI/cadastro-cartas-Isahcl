@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
    
@@ -113,12 +111,79 @@ int main() {
         printf("A carta vencedora é: %s\n", nomedacidade1);
     } else if(area2 > area1) {
         printf("A carta vencedora é: %s\n", nomedacidade2);
-        
-
     }
+    
+   #include <stdlib.h>
+   #include <time.h>
 
+    int opcao;
+    
+    printf("*** Escolha uma opção para comparar as cartas: ***\n");
+    printf("1. Comparar população1 com população2\n");
+    printf("2. Comparar área1 com área2\n");
+    printf("3. Comparar PIB1 com PIB2\n");
+    printf("4. Comparar pontos turísticos1 com pontos turísticos2\n");
+    printf("5. Comparar densidade populacional1 com densidade populacional2\n");
+    scanf("%d", &opcao);
 
+    switch (opcao) {
+        case 1:
+            if(populacao1 > populacao2) {
+                printf("A carta vencedora é: %s\n", nomedacidade1);
+            } else if(populacao2 > populacao1) {
+                printf("A carta vencedora é: %s\n", nomedacidade2);
+            } else {
+                printf("Empate na população!\n");
+            }
+            break;
+        case 2:
+            if(area1 > area2) {
+                printf("A carta vencedora é: %s\n", nomedacidade1);
+            } else if(area2 > area1) {
+                printf("A carta vencedora é: %s\n", nomedacidade2);
+            } else {
+                printf("Empate na área!\n");
+            }
+            break;
+        case 3:
+            if(pib1 > pib2) {
+                printf("A carta vencedora é: %s\n", nomedacidade1);
+            } else if(pib2 > pib1) {
+                printf("A carta vencedora é: %s\n", nomedacidade2);
+            } else {
+                printf("Empate no PIB!\n");
+            }
+            break;
+        case 4:
+            if(pontosturisticos1 > pontosturisticos2) {
+                printf("A carta vencedora é: %s\n", nomedacidade1);
+            } else if(pontosturisticos2 > pontosturisticos1) {
+                printf("A carta vencedora é: %s\n", nomedacidade2);
+            } else {
+                printf("Empate nos pontos turísticos!\n");
+            }
+            break;
+        case 5:
+            if(densidadepopulacional1 < densidadepopulacional2) {
+                printf("A carta vencedora é: %s\n", nomedacidade1);
+            } else if(densidadepopulacional2 < densidadepopulacional1) {
+                printf("A carta vencedora é: %s\n", nomedacidade2);
+            } else {
+                printf("Empate na densidade populacional!\n");
+            }
+            break;
+    }
 
     return 0;
 }
+            
+
+                        
+                        
+                        
+                        
+                        
+
+    
+       
 
